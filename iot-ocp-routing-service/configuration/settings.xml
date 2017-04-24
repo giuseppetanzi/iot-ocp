@@ -25,6 +25,18 @@
       <id>fusesource.repo</id>
       <repositories>
          <repository>
+          <id>maven</id>
+          <name>Red Hat General Availability Repository</name>
+          <url>https://repo.maven.apache.org/maven2</url>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <releases>
+            <enabled>true</enabled>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+        </repository>
+         <repository>
           <id>redhat.ga</id>
           <name>Red Hat General Availability Repository</name>
           <url>https://maven.repository.redhat.com/ga</url>
@@ -74,6 +86,18 @@
         </repository>
       </repositories>
       <pluginRepositories>
+         <pluginRepository>
+          <id>maven</id>
+          <name>Red Hat General Availability Repository</name>
+          <url>https://repo.maven.apache.org/maven2</url>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <releases>
+            <enabled>true</enabled>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+        </pluginRepository>
          <pluginRepository>
           <id>redhat.ga</id>
           <name>Red Hat General Availability Repository</name>
