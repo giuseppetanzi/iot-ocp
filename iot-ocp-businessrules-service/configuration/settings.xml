@@ -34,6 +34,19 @@ Copyright 2005-2015 Red Hat, Inc.
             <enabled>true</enabled>
           </releases>
         </repository>        
+        <repository>
+          <id>redhat.ga</id>
+          <name>Red Hat General Availability Repository</name>
+          <url>https://maven.repository.redhat.com/ga</url>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <releases>
+            <enabled>true</enabled>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+        </repository>
+ 
          <repository>
           <id>fusesource.m2</id>
           <name>FuseSource Community Release Repository</name>
@@ -58,7 +71,16 @@ Copyright 2005-2015 Red Hat, Inc.
             <updatePolicy>never</updatePolicy>
           </releases>
         </repository>
-        <repository>
+     </repositories>
+      <pluginRepositories>
+           <pluginRepository>
+          <id>apache</id>
+          <url>https://repo1.maven.org/maven2</url>
+          <releases>
+            <enabled>true</enabled>
+          </releases>
+        </pluginRepository>        
+         <pluginRepository>
           <id>redhat.ga</id>
           <name>Red Hat General Availability Repository</name>
           <url>https://maven.repository.redhat.com/ga</url>
@@ -69,16 +91,7 @@ Copyright 2005-2015 Red Hat, Inc.
             <enabled>true</enabled>
             <updatePolicy>never</updatePolicy>
           </releases>
-        </repository>
-      </repositories>
-      <pluginRepositories>
-           <pluginRepository>
-          <id>apache</id>
-          <url>https://repo1.maven.org/maven2</url>
-          <releases>
-            <enabled>true</enabled>
-          </releases>
-        </pluginRepository>        
+        </pluginRepository>
         <pluginRepository>
           <id>fusesource.m2</id>
           <name>FuseSource Community Release Repository</name>
@@ -103,19 +116,7 @@ Copyright 2005-2015 Red Hat, Inc.
             <updatePolicy>never</updatePolicy>
           </releases>
         </pluginRepository>
-        <pluginRepository>
-          <id>redhat.ga</id>
-          <name>Red Hat General Availability Repository</name>
-          <url>https://maven.repository.redhat.com/ga</url>
-          <snapshots>
-            <enabled>false</enabled>
-          </snapshots>
-          <releases>
-            <enabled>true</enabled>
-            <updatePolicy>never</updatePolicy>
-          </releases>
-        </pluginRepository>
-      </pluginRepositories>
+     </pluginRepositories>
     </profile>
   </profiles>
 
